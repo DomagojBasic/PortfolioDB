@@ -1,0 +1,29 @@
+:root {
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-start; /* Postavljanje na lijevu stranu */
+    margin-left: auto; /* Pomicanje prema desno */
+}
+
+li {
+    padding: 0 1rem;
+    
+    
+}
+li.active {
+    color: white;
+}
+.logo {
+    padding: 1rem;
+    font-size: 34px;
+}

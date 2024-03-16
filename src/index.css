@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+   --primary-active: #0098FA;
+   --primary-layout: #EEFAFF;
+   --primary-content: #015C92;
+
+   /* naturale pallet https://mycolor.space/?hex=%23015C92&sub=1*/
+}
+
+body {
+  font-family: "Popins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.3rem ;
+}
+a {
+  text-decoration:  none;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 2rem;
+}
