@@ -1,3 +1,5 @@
+1. npm install react-scripts --save
+2. npm install react-router-dom --save
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
