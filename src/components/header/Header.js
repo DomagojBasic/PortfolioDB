@@ -1,21 +1,37 @@
-import React from 'react'
-import './Header.css'
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import '../header/Header.css'
 
-const Header = () => {
-  return (
-    <div className='header'>
-        <div className='logo'>
-            Portfolio
-        </div>
-        <ul className='header-menu'>
-            <li><a href="/" alt="home_page">Home</a></li>
-            <li><a href="/" alt="skills_page">Skills</a></li>
-            <li><a href="/" alt="contact_page">Contact</a></li>
-        </ul>
+function Navbar() {
+	const navRef = useRef();
 
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
 
-    </div>
-  )
+	return (
+		<header>
+			<h3>Portfolio</h3>
+			<nav ref={navRef}>
+				<a href="/#">Home</a>
+				<a href="/#">My work</a>
+				<a href="/#">Blog</a>
+				<a href="/#">About me</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
 }
 
-export default Header
+export default Navbar;
